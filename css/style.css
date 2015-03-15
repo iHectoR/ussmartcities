@@ -276,6 +276,42 @@ div[class^='col-']{
 	font-size: 3.75rem;
 	font-weight: 700;
 	margin-bottom: 2.8125rem;
+	text-align: center;
+}
+.name .black-label{
+	position: relative;
+}
+.name .black-label:after{
+	content: '';
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 90%;
+	top: 0;
+	left: 0;
+	-webkit-transform: rotateZ(-6deg) translateY(5px) translateX(-15px);
+	-moz-transform: rotateZ(-6deg) translateY(5px) translateX(-15px);
+	-ms-transform: rotateZ(-6deg) translateY(5px) translateX(-15px);
+	-o-transform: rotateZ(-6deg) translateY(5px) translateX(-15px);
+	transform: rotateZ(-6deg) translateY(5px) translateX(-15px);
+	background-color: #000000;
+}
+.speakers .row>div:nth-child(2) .name .black-label:after{
+	width: 95%;
+	-webkit-transform: rotateZ(-5deg) translateX(5px);
+	-moz-transform: rotateZ(-5deg) translateX(5px);
+	-ms-transform: rotateZ(-5deg) translateX(5px);
+	-o-transform: rotateZ(-5deg) translateX(5px);
+	transform: rotateZ(-5deg) translateX(5px);
+}
+.speakers .row>div:nth-child(3) .name .black-label:after{
+	width: 130%;
+	height: 90%;
+	-webkit-transform: rotateZ(-3deg) translateY(10px) translateX(-10px);
+	-moz-transform: rotateZ(-3deg) translateY(10px) translateX(-10px);
+	-ms-transform: rotateZ(-3deg) translateY(10px) translateX(-10px);
+	-o-transform: rotateZ(-3deg) translateY(10px) translateX(-10px);
+	transform: rotateZ(-3deg) translateY(10px) translateX(-10px);
 }
 .speakers .speaker-info{
 	font-size: 2.5rem;
@@ -511,7 +547,7 @@ div[class^='col-']{
 		margin-bottom: 25px;
 	}
 	.header-line{
-		background: none;
+		background: #fff;
 	}
 	.header-text{
 		display: block;
