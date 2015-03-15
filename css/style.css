@@ -450,10 +450,10 @@ div[class^='col-']{
 		padding-top: 5rem;
 		padding-bottom: 5rem;
 	}
-	.speakers .speaker-photo{
-		width: 12rem;
-		height: 12rem;
-	}
+	/*.speakers .speaker-photo{*/
+		/*width: 12rem;*/
+		/*height: 12rem;*/
+	/*}*/
 	.speakers{
 		padding-top: 5rem;
 		padding-bottom: 7rem;
@@ -466,18 +466,18 @@ div[class^='col-']{
 		height: 17.82rem;
 		width: 31.03rem;
 	}
-	.socials a{
-		height: 6rem;
-		width: 6rem;
-		line-height: 6rem;
-	}
-	.form input{
-		line-height: 6rem;
-	}
-	.form input[type="submit"]{
-		width: 6rem;
-		height: 6rem;
-	}
+	/*.socials a{*/
+		/*height: 6rem;*/
+		/*width: 6rem;*/
+		/*line-height: 6rem;*/
+	/*}*/
+	/*.form input{*/
+		/*line-height: 6rem;*/
+	/*}*/
+	/*.form input[type="submit"]{*/
+		/*width: 6rem;*/
+		/*height: 6rem;*/
+	/*}*/
 	.reserve{
 		right: 35%;
 		top: 15%;
