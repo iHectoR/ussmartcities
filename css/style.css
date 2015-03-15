@@ -1,4 +1,8 @@
 
+/* -----------------------------------------
+   Import fonts
+----------------------------------------- */
+
 @font-face {
 	font-family: 'DINPro';
 	src: url('../fonts/DINPro-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/DINPro-Regular.otf')  format('opentype'),
@@ -38,6 +42,12 @@ body{
 img{
 	max-width: 100%;
 }
+input:focus, input:active{
+	outline: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
 .container{
 	max-width: 90%;
 	padding-left: 20px;
@@ -46,10 +56,7 @@ img{
 	position: relative;
 	z-index: 2;
 }
-.row{
-	/*margin-left: -15px;*/
-	/*margin-right: -15px;*/
-}
+
 div[class^='col-']{
 	padding-left: 15px;
 	padding-right: 15px;
@@ -62,7 +69,6 @@ div[class^='col-']{
 	width: 33.333333%;
 	float: left;
 }
-
 @media(min-width: 960px){
 	.col-lg-1-4{
 		width: 25%;
@@ -82,13 +88,13 @@ div[class^='col-']{
 		margin-bottom: 30px;
 	}
 }
+
+/* -----------------------------------------
+   Header line
+----------------------------------------- */
+
 .header-line{
 	background: url("../img/topheader.png") no-repeat 50% 50%;
-	/*-webkit-transform: translateX(-25%);*/
-	/*-moz-transform: translateX(-25%);*/
-	/*-ms-transform: translateX(-25%);*/
-	/*-o-transform: translateX(-25%);*/
-	/*transform: translateX(-25%);*/
 	height: 6.875rem;
 	border-bottom: 1px solid #D1D1D1;
 	/*white-space: nowrap;*/
@@ -110,22 +116,11 @@ div[class^='col-']{
 	letter-spacing: normal;
 	text-transform: uppercase;
 }
-/*}*/
-/*.header-text+.header-text{*/
-	/*margin-left: 1.5rem;*/
-/*}*/
-/*.header-text.blue{*/
-	/*color: #00ADEE;*/
-/*}*/
-/*.header-text.green{*/
-	/*color: #71BF44;*/
-/*}*/
-/*.header-text.yellow{*/
-	/*color: #F6ED31;*/
-/*}*/
-/*.header-text.pink{*/
-	/*color: #EF5993;*/
-/*}*/
+
+/* -----------------------------------------
+   Main section with title and subscribe form
+----------------------------------------- */
+
 .subscribe-section{
 	margin-top: 6.875rem;;
 	padding-top: 14.7rem;
@@ -182,7 +177,6 @@ div[class^='col-']{
 	line-height: 7.1875rem;
 	text-align: center;
 }
-
 .socials a+a{
 	margin-left: 3.125rem;
 }
@@ -192,6 +186,11 @@ div[class^='col-']{
 .socials a.tw{
 	background-color: #598DCA;
 }
+
+/* -----------------------------------------
+   Section with description of Smart Cities
+----------------------------------------- */
+
 .description-section{
 	background-color: #F6ED31;
 	padding-top: 9.375rem;
@@ -218,6 +217,11 @@ div[class^='col-']{
 	margin-bottom: 3.75rem;
 	letter-spacing: normal;
 }
+
+/* -----------------------------------------
+   Section with Forum themes
+----------------------------------------- */
+
 .forum-themes{
 	padding-top: 8.125rem;
 	padding-bottom: 6.25rem;
@@ -253,6 +257,11 @@ div[class^='col-']{
 	letter-spacing: -0.06em;
 	line-height: 1.2;
 }
+
+/* -----------------------------------------
+   Speakers section
+----------------------------------------- */
+
 .speakers{
 	background-color: #71BF44;
 	padding-top: 6.875rem;
@@ -329,6 +338,11 @@ div[class^='col-']{
 	border-radius: 50%;
 	margin-bottom: 4.375rem;
 }
+
+/* -----------------------------------------
+   Partners section
+----------------------------------------- */
+
 .partners{
 	padding-top: 5rem;
 	padding-bottom: 8.75rem;
@@ -377,6 +391,11 @@ div[class^='col-']{
 	-o-transform: scale(.7);
 	transform: scale(.7);
 }
+
+/* -----------------------------------------
+   Join Us section
+----------------------------------------- */
+
 .join-us{
 	padding-top: 5rem;
 	padding-bottom: 9.375rem;
@@ -403,6 +422,19 @@ div[class^='col-']{
 	line-height: 1.2;
 	margin-bottom: 2.1875rem;
 }
+.join-us .socials p{
+	margin-bottom: 8.125rem;
+}
+.join-us .socials a{
+	background-color: #fff;
+	color: #00ADEE;
+}
+.join-us .form{
+	margin-bottom: 6.25rem;
+}
+
+
+
 .form{
 	padding-top: 40px;
 	width: 100%;
@@ -415,8 +447,6 @@ div[class^='col-']{
 	right: 3px;
 	top: 44px;
 	display: block;
-	/*width: 50px;*/
-	/*height: 50px;*/
 }
 .form input[type="submit"]{
 	padding: 0;
@@ -443,18 +473,11 @@ div[class^='col-']{
 	font-weight: 300;
 	font-family: DINPro, sans-serif;
 }
-.join-us .form{
-	margin-bottom: 6.25rem;
-}
-.join-us .socials p{
-	margin-bottom: 8.125rem;
-}
-.join-us .socials a{
-	background-color: #fff;
-	color: #00ADEE;
-}
 
-/* Media queries */
+/* -----------------------------------------
+   Media queries
+----------------------------------------- */
+
 @media (max-width: 1900px){
 	html{
 		font-size: 0.67em;
@@ -493,10 +516,6 @@ div[class^='col-']{
 		padding-top: 5rem;
 		padding-bottom: 5rem;
 	}
-	/*.speakers .speaker-photo{*/
-		/*width: 12rem;*/
-		/*height: 12rem;*/
-	/*}*/
 	.speakers{
 		padding-top: 5rem;
 		padding-bottom: 7rem;
@@ -509,18 +528,6 @@ div[class^='col-']{
 		height: 17.82rem;
 		width: 31.03rem;
 	}
-	/*.socials a{*/
-		/*height: 6rem;*/
-		/*width: 6rem;*/
-		/*line-height: 6rem;*/
-	/*}*/
-	/*.form input{*/
-		/*line-height: 6rem;*/
-	/*}*/
-	/*.form input[type="submit"]{*/
-		/*width: 6rem;*/
-		/*height: 6rem;*/
-	/*}*/
 	.reserve{
 		right: 35%;
 		top: 15%;
@@ -551,6 +558,16 @@ div[class^='col-']{
 	}
 	.header-text{
 		display: block;
+	}
+	.slick-slide{
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.partner-list{
+		margin-top: 0;
+	}
+	.other-partners>div:nth-child(2),.other-partners>div:nth-child(3){
+		display: none;
 	}
 }
 @media (max-width: 500px){
