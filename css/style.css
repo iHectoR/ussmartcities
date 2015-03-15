@@ -94,6 +94,12 @@ div[class^='col-']{
 	/*white-space: nowrap;*/
 	/*text-align: center;*/
 	/*width: 200%;*/
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #fff;
+	z-index: 3;
 }
 .header-text {
 	display: none;
@@ -121,6 +127,7 @@ div[class^='col-']{
 	/*color: #EF5993;*/
 /*}*/
 .subscribe-section{
+	margin-top: 6.875rem;;
 	padding-top: 14.7rem;
 	padding-bottom: 17.2rem;
 	text-align: left;
