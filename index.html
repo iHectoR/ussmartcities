@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="description" content=""/>
+	<meta name="keywords" content=""/>
+	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script>
+		;(function(c){var n=-1,f=-1,r=function(a){var b=null,d=[];c(a).each(function(){var a=c(this),k=a.offset().top-h(a.css("margin-top")),l=0<d.length?d[d.length-1]:null;null===l?d.push(a):1>=Math.floor(Math.abs(b-k))?d[d.length-1]=l.add(a):d.push(a);b=k});return d},h=function(a){return parseFloat(a)||0},p=function(a){var b={byRow:!0,remove:!1,property:"height"};if("object"===typeof a)return c.extend(b,a);"boolean"===typeof a?b.byRow=a:"remove"===a&&(b.remove=!0);return b},b=c.fn.matchHeight=function(a){a=
+				p(a);if(a.remove){var e=this;this.css(a.property,"");c.each(b._groups,function(a,b){b.elements=b.elements.not(e)});return this}if(1>=this.length)return this;b._groups.push({elements:this,options:a});b._apply(this,a);return this};b._groups=[];b._throttle=80;b._maintainScroll=!1;b._beforeUpdate=null;b._afterUpdate=null;b._apply=function(a,e){var d=p(e),g=c(a),k=[g],l=c(window).scrollTop(),f=c("html").outerHeight(!0),m=g.parents().filter(":hidden");m.each(function(){var a=c(this);a.data("style-cache",
+				a.attr("style"))});m.css("display","block");d.byRow&&(g.each(function(){var a=c(this),b="inline-block"===a.css("display")?"inline-block":"block";a.data("style-cache",a.attr("style"));a.css({display:b,"padding-top":"0","padding-bottom":"0","margin-top":"0","margin-bottom":"0","border-top-width":"0","border-bottom-width":"0",height:"100px"})}),k=r(g),g.each(function(){var a=c(this);a.attr("style",a.data("style-cache")||"")}));c.each(k,function(a,b){var e=c(b),f=0;d.byRow&&1>=e.length?e.css(d.property,
+				""):(e.each(function(){var a=c(this),b={display:"inline-block"===a.css("display")?"inline-block":"block"};b[d.property]="";a.css(b);a.outerHeight(!1)>f&&(f=a.outerHeight(!1));a.css("display","")}),e.each(function(){var a=c(this),b=0;"border-box"!==a.css("box-sizing")&&(b+=h(a.css("border-top-width"))+h(a.css("border-bottom-width")),b+=h(a.css("padding-top"))+h(a.css("padding-bottom")));a.css(d.property,f-b)}))});m.each(function(){var a=c(this);a.attr("style",a.data("style-cache")||null)});b._maintainScroll&&
+		c(window).scrollTop(l/f*c("html").outerHeight(!0));return this};b._applyDataApi=function(){var a={};c("[data-match-height], [data-mh]").each(function(){var b=c(this),d=b.attr("data-match-height")||b.attr("data-mh");a[d]=d in a?a[d].add(b):b});c.each(a,function(){this.matchHeight(!0)})};var q=function(a){b._beforeUpdate&&b._beforeUpdate(a,b._groups);c.each(b._groups,function(){b._apply(this.elements,this.options)});b._afterUpdate&&b._afterUpdate(a,b._groups)};b._update=function(a,e){if(e&&"resize"===
+				e.type){var d=c(window).width();if(d===n)return;n=d}a?-1===f&&(f=setTimeout(function(){q(e);f=-1},b._throttle)):q(e)};c(b._applyDataApi);c(window).bind("load",function(a){b._update(!1,a)});c(window).bind("resize orientationchange",function(a){b._update(!0,a)})})(jQuery);
+		jQuery(function ($) {
+			jQuery('.partner-logo').matchHeight();
+			jQuery('.themes>.col-lg-1-4').matchHeight();
+			jQuery('.header-title').matchHeight();
+			jQuery('.partner-list').matchHeight();
+		})
+	</script>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/reset.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/layout.css"/>
+	<link rel="shortcut icon" href="favicon.ico"/>
+	<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header class="header-line">
+		<span class="header-text blue">#uasmartcities</span>
+		<span class="header-text green">#uasmartcities</span>
+		<span class="header-text yellow">#uasmartcities</span>
+		<span class="header-text pink">#uasmartcities</span>
+	</header>
+	<section class="subscribe-section">
+		<div class="container">
+
+			<div class="row caption">
+				<div class="col-lg-1-2">
+					<div class="header-title"><h2 class="main-title">SMART CITIES FORUM</h2>
+						<h5 class="thin-text">Подія, що змінює ставлення до міста</h5></div>
+					<p class="medium-text">Я хочу отримувати новини:</p>
+					<div class="form">
+						<form action="//shiftup.us9.list-manage.com/subscribe/post?u=dcb354622f8b2cefe22fc47f5&amp;id=915abaac8c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+							<div id="mc_embed_signup_scroll">
+
+								<div class="mc-field-group">
+									<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="E-Mail">
+								</div>
+								<div id="mce-responses" class="clear">
+									<div class="response" id="mce-error-response" style="display:none"></div>
+									<div class="response" id="mce-success-response" style="display:none"></div>
+								</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+								<div style="position: absolute; left: -5000px;"><input type="text" name="b_dcb354622f8b2cefe22fc47f5_915abaac8c" tabindex="-1" value=""></div>
+								<div class="clear"><input type="submit" value="" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="col-lg-1-2">
+					<div class="header-title">
+						<h2 class="main-title">16 квітня, iForum</h2>
+						<h5 class="thin-text">МВЦ, Броварський проспект 15<br><span class="medium-text">Початок о 10:00</span></h5>
+					</div>
+					<div class="socials">
+						<p class="medium-text">Cоціальні мережі:</p>
+						<a class="fb" href="#"><i class="fa fa-facebook"></i></a>
+						<a class="tw" href="#"><i class="fa fa-twitter"></i></a>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</section>
+	<section class="description-section">
+		<div class="container">
+			<h3 class="main-title">Що це?</h3>
+
+			<div class="description">
+				<p>Розумний урбанізм передбачає прагнення міст до інтегрованого, сталого розвитку. Від того як розвиватимусться міста, залежить майбутнє суспільства не лише в сфері урбаністичного розвитку, але і в економічній, екологічній та громадській сферах.</p>
+				<p>Інформаційні та комунікаційні технології (ict), аналіз big da ta та новітні системи на зразок gis надають корисні інструменти для підтримки розумних рішень в контексті урбаністичного зростання. Урбаністи, архітектори, управлінці, громадяни мають отримати переваги від	Можливостей, які пропонують дані технології для досягнення нового рівня урбаністичного розвитку.</p>
+				<p>Розумні міста – не просто більш безпечні, чисті та ефективні.<br>
+					Розумні міста – це міста нашого майбутнього.</p>
+			</div>
+		</div>
+	</section>
+	<section class="forum-themes">
+		<div class="container">
+			<h3 class="main-title">Анатомія SMART CITY</h3>
+			<img src="img/city.jpg" alt="Анатомія SMART CITY"/>
+			<h3 class="main-title">Теми форуму</h3>
+			<div class="row themes">
+				<div class="col-lg-1-4 col-md-1-2">
+					<div class="border-top blueb"><h4 class="single-theme">Smart energy</h4>
+					<p class="theme-description">Це нове покління елекричних мереж, які використовють ІТ для агрегації та аналізу данних про енерговиробництво та енергоспоживання задля їх синергії. Такі системи використовуються для оптимізації ресурсів в електричних мережах розумних міст.</p></div>
+				</div>
+				<div class="col-lg-1-4 col-md-1-2">
+					<div class="border-top greenb"><h4 class="single-theme">Smart mobility</h4>
+					<p class="theme-description">Сучасні технології дозволяють фахово та розумно управляти транспортною системою міста: робити переміщення кожного мешканця швидшим та дешевшим, трансорт екологічнішим,  а цілісну транспортну систему ефективнішою.</p></div>
+				</div>
+				<div class="col-lg-1-4 col-md-1-2">
+					<div class="border-top yellowb"><h4 class="single-theme">Smart security</h4>
+					<p class="theme-description">Розумні системи безпеки дозволяють за допомогою кращого моніторингу та аналізу патернів підвищити якість та оперативність реагування на загрози безпеці як окремих громадян так і міста в цілому. При чому дані збираються не лише через складну систему датчиків, реєстраторів тощо, але зі всього інформаційного середовища.</p></div>
+				</div>
+				<div class="col-lg-1-4 col-md-1-2">
+					<div class="border-top pinkb"><h4 class="single-theme">Big data</h4>
+					<p class="theme-description">Інформація у сучаномі світі сторюється та фіксується неймовірними об'ємами кожну мить. Аналітика та якісні висновки з цих данних — основа для прийняття рішень для побудови розумного міста.</p></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="speakers">
+		<div class="container">
+			<h3 class="main-title">Лектори</h3>
+			<div class="row">
+				<div class="col-lg-1-3">
+					<img class="speaker-photo" src="img/photo1.png" alt=""/>
+					<h5 class="name">Lorem ipsum.</h5>
+
+					<p class="speaker-info">Директор однієї з найбільших консалтингових компаній у сфері smart cities</p>
+				</div>
+				<div class="col-lg-1-3">
+					<img class="speaker-photo" src="img/photo2.png" alt=""/>
+					<h5 class="name">Lorem ipsum.</h5>
+
+					<p class="speaker-info">Директор американського технологічного інституту, що вивчає проблеми урбаністики</p>
+				</div>
+				<div class="col-lg-1-3">
+					<img class="speaker-photo" src="img/photo3.png" alt=""/>
+					<h5 class="name">Lorem ipsum.</h5>
+
+					<p class="speaker-info">Практикуючий фахівець з питань інтеграції smart-рішень у міський простір</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="partners">
+		<div class="container">
+			<h3 class="main-title">Організатори та партнери</h3>
+			<div class="row">
+				<div class="col-lg-1-2">
+					<div class="partner-logo"><img src="img/greencubator.png" alt="Greencubator"/>
+					</div>
+					<p class="partner-desc">Greencubator - це українська мережа енергетичних ініціатив, яка поєднує енергетичні таланти та просуває сталі інновації. Greencubator є точкою тяжіння для тих, кому не байдуже майбутнє енергетики та зелених інновацій в Україні.</p>
+				</div>
+				<div class="col-lg-1-2">
+					<div class="partner-logo"><img src="img/uup.png" alt="Ukrainian Urban Project"/>
+					</div>
+					<p class="partner-desc">Досягнення будь-яких якісних змін потребує знання, дії та ресурсу. Метою діяльності Ukrainian Urban Project стало створення людської мережі однодумців, що поєднує громадських активістів, спеціалістів з урбаністики та представників бізнесу. Спільнота однодумців - сильна платформа для реалізації проектів націлених на покращення міських умов життя.</p>
+				</div>
+			</div>
+			<div class="row" style="position: relative">
+				<div class="col-lg-1-3"><div class="partner-list"><img src="img/logo1.png" alt=""/></div></div>
+				<div class="col-lg-1-3"><div class="partner-list"><img src="img/logo2.png" alt=""/></div></div>
+				<div class="col-lg-1-3"><div class="partner-list"><img src="img/logo3.png" alt=""/></div></div>
+				<img class="reserve" src="img/reserve.png" alt=""/>
+			</div>
+		</div>
+	</section>
+	<footer class="join-us">
+		<div class="container">
+			<h3 class="main-title">Долучайтесь</h3>
+
+			<div class="about-us">
+				<p>Ми прагнемо об'єднувати ініціативних людей в команди для реалізаці міських проектів, тому раді будь-якій формі співробітництва.
+				</p>
+
+				<p>Співпрацюємо з активістами, волонтерами, підприємцями та брендами. Зацікавило? Долучайтеся до події, ставайте партнерами та творіть розумні міста України!</p>
+			</div>
+			<div class="form">
+				<form action="//shiftup.us9.list-manage.com/subscribe/post?u=dcb354622f8b2cefe22fc47f5&amp;id=915abaac8c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					<div id="mc_embed_signup_scroll">
+
+						<div class="mc-field-group">
+							<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="E-Mail">
+						</div>
+						<div id="mce-responses" class="clear">
+							<div class="response" id="mce-error-response" style="display:none"></div>
+							<div class="response" id="mce-success-response" style="display:none"></div>
+						</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+						<div style="position: absolute; left: -5000px;"><input type="text" name="b_dcb354622f8b2cefe22fc47f5_915abaac8c" tabindex="-1" value=""></div>
+						<div class="clear"><input type="submit" value="" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+					</div>
+				</form>
+			</div>
+			<div class="socials">
+				<p>Підписуйтесь на новини та на наші сторінки у соціальних мережах:</p>
+				<a class="fb" href="#"><i class="fa fa-facebook"></i></a>
+				<a class="tw" href="#"><i class="fa fa-twitter"></i></a>
+			</div>
+		</div>
+
+
+	</footer>
+</body>
+</html>
