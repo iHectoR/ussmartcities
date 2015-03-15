@@ -433,13 +433,10 @@ div[class^='col-']{
 .join-us .form{
 	margin-bottom: 6.25rem;
 }
-
-
-
 .form{
 	padding-top: 40px;
 	width: 100%;
-	max-width: 56.25rem;
+	max-width: 900px;
 	margin: 0 auto;
 	position: relative;
 }
