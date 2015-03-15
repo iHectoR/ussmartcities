@@ -570,7 +570,7 @@ div[class^='col-']{
 	.other-partners>div{
 		display: none;
 	}
-	:nth-child(2),.other-partners>div:nth-child(1){
+	.other-partners>div:nth-child(1){
 		display: block;
 	}
 }
