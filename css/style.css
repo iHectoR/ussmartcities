@@ -452,8 +452,8 @@ div[class^='col-']{
 }
 .form input[type="submit"]{
 	padding: 0;
-	width: 7.5rem;
-	height: 100%;
+	width: 70px;
+	height: 70px;
 	border: none;
 	background: #fff url("../img/sub_arrow.png") no-repeat 50% 50%;
 	-webkit-background-size: 50% auto;
@@ -462,9 +462,8 @@ div[class^='col-']{
 }
 .form input{
 	width: 100%;
-	font-size: 3.75rem;
-	line-height: 7.5rem;
-
+	font-size: 30px;
+	line-height: 70px;
 	text-transform: uppercase;
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
