@@ -33,7 +33,6 @@ body{
 	font-family: DINPro, sans-serif;
 	text-align: center;
 	line-height: 1.5;
-	overflow-x: hidden;
 	font-size: 100%;
 }
 img{
@@ -84,39 +83,43 @@ div[class^='col-']{
 	}
 }
 .header-line{
-	-webkit-transform: translateX(-25%);
-	-moz-transform: translateX(-25%);
-	-ms-transform: translateX(-25%);
-	-o-transform: translateX(-25%);
-	transform: translateX(-25%);
+	background: url("../img/topheader.png") no-repeat 50% 50%;
+	/*-webkit-transform: translateX(-25%);*/
+	/*-moz-transform: translateX(-25%);*/
+	/*-ms-transform: translateX(-25%);*/
+	/*-o-transform: translateX(-25%);*/
+	/*transform: translateX(-25%);*/
 	height: 6.875rem;
 	border-bottom: 1px solid #D1D1D1;
-	white-space: nowrap;
-	text-align: center;
-	width: 200%;
+	/*white-space: nowrap;*/
+	/*text-align: center;*/
+	/*width: 200%;*/
 }
-.header-text{
+.header-text {
+	display: none;
 	line-height: 6.875rem;
-	font-size: 4.375rem;
+	font-size: 5.375rem;
 	font-weight: 700;
+	color: #00ADEE;
 	letter-spacing: normal;
 	text-transform: uppercase;
 }
-.header-text+.header-text{
-	margin-left: 1.5rem;
-}
-.header-text.blue{
-	color: #00ADEE;
-}
-.header-text.green{
-	color: #71BF44;
-}
-.header-text.yellow{
-	color: #F6ED31;
-}
-.header-text.pink{
-	color: #EF5993;
-}
+/*}*/
+/*.header-text+.header-text{*/
+	/*margin-left: 1.5rem;*/
+/*}*/
+/*.header-text.blue{*/
+	/*color: #00ADEE;*/
+/*}*/
+/*.header-text.green{*/
+	/*color: #71BF44;*/
+/*}*/
+/*.header-text.yellow{*/
+	/*color: #F6ED31;*/
+/*}*/
+/*.header-text.pink{*/
+	/*color: #EF5993;*/
+/*}*/
 .subscribe-section{
 	padding-top: 14.7rem;
 	padding-bottom: 17.2rem;
@@ -413,12 +416,20 @@ div[class^='col-']{
 	html{
 		font-size: 0.67em;
 	}
+	.header-line{
+		-webkit-background-size: auto 70%;
+		background-size: auto 70%;
+	}
 
 }
 @media (max-width: 1600px){
 
 	html{
 		font-size: 0.55em;
+	}
+	.header-line{
+		-webkit-background-size: auto 50%;
+		background-size: auto 50%;
 	}
 }
 @media (max-width: 1200px){
@@ -491,6 +502,12 @@ div[class^='col-']{
 	}
 	.join-us .socials p{
 		margin-bottom: 25px;
+	}
+	.header-line{
+		background: none;
+	}
+	.header-text{
+		display: block;
 	}
 }
 @media (max-width: 500px){
