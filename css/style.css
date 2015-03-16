@@ -452,7 +452,7 @@ div[class^='col-']{
 	width: 70px;
 	height: 70px;
 	border: none;
-	background: url("../img/sub_arrow.png") no-repeat 50% 50%;
+	background: transparent url("../img/sub_arrow.png") no-repeat 50% 50%;
 	-webkit-background-size: 50% auto;
 	background-size: 50% auto;
 	cursor: pointer;
