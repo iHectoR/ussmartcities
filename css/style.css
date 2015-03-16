@@ -453,8 +453,8 @@ div[class^='col-']{
 	height: 70px;
 	border: none;
 	background: transparent url("../img/sub_arrow.png") no-repeat 50% 50% !important;
-	-webkit-background-size: 50% auto;
-	background-size: 50% auto;
+	-webkit-background-size: auto 50% ;
+	background-size: auto 50%;
 	cursor: pointer;
 }
 .form input{
@@ -467,7 +467,7 @@ div[class^='col-']{
 	border-radius: 8px;
 	border: 3px solid #00ADEE;
 	padding-left: 2.5rem;
-	padding-right: 100px !important;
+	padding-right: 75px !important;
 	font-weight: 300;
 	font-family: DINPro, sans-serif;
 }
