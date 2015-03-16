@@ -446,16 +446,7 @@ div[class^='col-']{
 	top: 45px;
 	display: block;
 }
-.form input[type="submit"]{
-	padding: 0;
-	width: 70px;
-	height: 70px;
-	border: none;
-	background: transparent url("../img/sub_arrow.png") no-repeat 50% 50% !important;
-	-webkit-background-size: auto 20%;
-	background-size: auto 20%;
-	cursor: pointer;
-}
+
 .form input{
 	width: 100%;
 	font-size: 30px;
@@ -469,6 +460,16 @@ div[class^='col-']{
 	padding-right: 75px !important;
 	font-weight: 300;
 	font-family: DINPro, sans-serif;
+}
+.form input[type="submit"]{
+	padding: 0 !important;
+	width: 70px;
+	height: 70px;
+	border: none;
+	background: transparent url("../img/sub_arrow.png") no-repeat 50% 50% !important;
+	-webkit-background-size: auto 20%;
+	background-size: auto 20%;
+	cursor: pointer;
 }
 
 /* -----------------------------------------
